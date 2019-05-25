@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+/* Se incluye la tipografia Dancing Script al proyecto*/
+@font-face{
+	font-family: 'dancing-script';
+	src: url(dancing-script.dancingscriptot.otf);
+}
+/*Se fija un color de fondo para todo el cuerpo del documento y se aplcia la tipografia Dancing Script a todo el documento*/
+body{
+	background:#02010A;
+	font-family: dancing-script;
+}
+
+ul{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+
+img{
+	filter: drop-shadow(2px 2px 0 #02010A);
+}
+/*Contenedor de la pagina*/
+#contenido{
+	width:900px;
+	display: block;
+	margin:auto;
+}
+
+#cabecera{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	background:#5b7989;
+	border-radius:10px 10px 0 0;
+	color:#FFFFFF;
+	vertical-align: middle;
+}
+
+#cabecera header{
+	float:left;
+	width:50%;
+	padding-left: 2%;
+	text-shadow: 2px 2px 1px #02010A;
+}
+
+#cabecera nav{
+	float:right;
+	margin:auto;
+	width:50%;
+	padding: 3.5% 2% 0 0;
+}
+
+#cabecera ul{
+	float:right;
+	overflow: hidden;
+	font-size: 4vh;
+}
+
+#cabecera li{
+	display: inline;
+	padding-left: 1.5%;
+}
+
+#cabecera a{
+	color:#FFFFFF;
+}
+
+#cabecera a:active{
+	text-decoration: none;	
+}
+
+#imgcentral{
+	align-content: center;
+	background:#82c3a6;
+}
+
+#imgcentral img{
+	display:block;
+	margin:auto;
+	width:80%;
+	padding: 2% 0;
+}
+
+#imgsecundaria{
+	display:flex;
+	flex-direction: row;
+	background:#d5c75f;
+	padding: 2% 0;
+}
+
+#imgsecundaria figure{
+	display:block;
+	margin:auto;
+	width:50%;
+}
+
+#imgsecundaria img{
+	display:block;
+	margin:auto;
+	width:90%;
+}
+
+#imgsecundaria figcaption{
+	color:black;
+	text-align:center;
+}
+
+.galeria{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	width:100%;
+	background:#C6d5C5;
+}
+
+.galeria figure{
+	display:block;
+	margin:auto;
+	padding:2% 0; 
+	width:30%;
+}
+
+.galeria img{
+	display:block;
+	margin:auto;
+	width:100%;
+}
+
+footer{
+	display:flex;
+	flex:row;
+	background:#C6d5c5;
+	border-radius:0 0 10px 10px;
+	padding: 2% 0;
+}
+
+.piepagina{
+	width:25%;
+	font-size:3vh;
+	text-align: center;
+}
+
+p > img{
+	width:10%;
+	filter:drop-shadow(0 0 0 black)
+}
+
+@media (max-width:900px){
+	#contenido{
+		width:100%;
+		margin:auto;
+	}
+	#cabecera{
+		display:flex;
+		flex-direction: column;
+	}
+	#cabecera header{
+		float:none;
+		width:100%;
+		text-align:center;
+		padding-left:0;
+	}
+	#cabecera nav{
+		float:none;
+		width:100%;
+		padding:0;
+	}
+	#cabecera ul{
+		text-align:center;
+		float:none;
+	}
+	#cabecera li{
+		display:inline-block;
+		padding-left:0;
+	}
+	#imgcentral img{
+		width:80%;
+	}
+	#imgsecundaria{
+		display:flex;
+		flex-direction: column;
+	}
+	#imgsecundaria figure{
+		width:100%;
+	}
+	#imgsecundaria img{
+		width:80%;
+	}
+	footer{
+		display:flex;
+		flex-direction: column;
+	}
+	.piepagina{
+		width:100%;
+		text-align:left;
+	}
+}
+
+
