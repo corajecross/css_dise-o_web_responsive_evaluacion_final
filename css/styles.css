@@ -16,10 +16,6 @@ ul{
 	margin:0;
 	padding:0;
 }
-/* Configuracion de efecto de sombra para las imagenes del documento*/
-img{
-	filter: drop-shadow(2px 2px 0 #02010A);
-}
 /*Contenedor de la pagina*/
 #contenido{
 	width:900px;
@@ -35,6 +31,7 @@ img{
 	border-radius:10px 10px 0 0;
 	color:#FFFFFF;
 	vertical-align: middle;
+	animation: animacion 1s;
 }
 /*Configuracion del titulo de la pagina*/
 #cabecera header{
@@ -79,6 +76,7 @@ img{
 	margin:auto;
 	width:80%;
 	padding: 2% 0;
+	filter: drop-shadow(2px 2px 0 #02010A);
 }
 
 #imgsecundaria{
@@ -98,6 +96,10 @@ img{
 	display:block;
 	margin:auto;
 	width:90%;
+	filter: drop-shadow(2px 2px 0 #02010A);
+	transition-property: filter;
+	transition-duration:1s;
+	transition-timing-function: linear;
 }
 
 #imgsecundaria figcaption{
@@ -105,12 +107,24 @@ img{
 	text-align:center;
 }
 
+#rotacion:hover{
+	transform: rotate(10deg);
+}
+
+#traslado:hover{
+	transform: translate(20px, -5px);
+}
+
+#imgsecundaria img:hover{
+	filter: drop-shadow(2px 2px 0 #82C3A6);
+}
+
 .galeria{
 	display:flex;
 	flex-direction:row;
 	flex-wrap: wrap;
 	width:100%;
-	background:#C6d5C5;
+	background:#d5c75f;
 }
 
 .galeria figure{
@@ -124,6 +138,21 @@ img{
 	display:block;
 	margin:auto;
 	width:100%;
+}
+
+.escalagrises{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}
+
+.desenfoque{
+	-webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.sefia{
+	-webkit-filter:sepia(100%);
+	filter:sepia(100%);
 }
 
 footer{
@@ -143,6 +172,18 @@ footer{
 p > img{
 	width:10%;
 	filter:drop-shadow(0 0 0 black)
+}
+
+@-webkit-keyframes animacion{
+	0%{
+		margin-top:150%;
+	}
+	60%{
+		margin-top:-5%;
+	}
+	100%{
+		margin-top:0%;
+	}
 }
 
 @media (max-width:900px){
