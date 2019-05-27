@@ -5,18 +5,18 @@
 	font-family: 'dancing-script';
 	src: url(dancing-script.dancingscriptot.otf);
 }
-/*Se fija un color de fondo para todo el cuerpo del documento y se aplcia la tipografia Dancing Script a todo el documento*/
+/*Se fija un color de fondo para todo el cuerpo del documento y se aplica la tipografia Dancing Script a todo el documento*/
 body{
 	background:#02010A;
 	font-family: dancing-script;
 }
-
+/*Configuracion general para todas las listas no ordenadas que aparecen en el documeto*/
 ul{
 	list-style-type: none;
 	margin:0;
 	padding:0;
 }
-
+/* Configuracion de efecto de sombra para las imagenes del documento*/
 img{
 	filter: drop-shadow(2px 2px 0 #02010A);
 }
@@ -26,7 +26,7 @@ img{
 	display: block;
 	margin:auto;
 }
-
+/*Configuracion general de la cabecera*/
 #cabecera{
 	display:flex;
 	flex-direction:row;
@@ -36,24 +36,23 @@ img{
 	color:#FFFFFF;
 	vertical-align: middle;
 }
-
+/*Configuracion del titulo de la pagina*/
 #cabecera header{
 	float:left;
 	width:50%;
 	padding-left: 2%;
 	text-shadow: 2px 2px 1px #02010A;
 }
-
+/*Configuracion de la barra de navegacion*/
 #cabecera nav{
 	float:right;
 	margin:auto;
 	width:50%;
 	padding: 3.5% 2% 0 0;
 }
-
+/*Configuracion general de la lista no ordenada que conforma la barra de navegacion*/
 #cabecera ul{
 	float:right;
-	overflow: hidden;
 	font-size: 4vh;
 }
 
@@ -61,11 +60,11 @@ img{
 	display: inline;
 	padding-left: 1.5%;
 }
-
+/*Configura el color de los enlaces pertenecientes a la barra de navegacion*/
 #cabecera a{
 	color:#FFFFFF;
 }
-
+/*Efecto de no subrayado en pagina activa de barra de navegacion*/
 #cabecera a:active{
 	text-decoration: none;	
 }
@@ -175,7 +174,7 @@ p > img{
 		padding-left:0;
 	}
 	#imgcentral img{
-		width:80%;
+		width:100%;
 	}
 	#imgsecundaria{
 		display:flex;
@@ -185,6 +184,14 @@ p > img{
 		width:100%;
 	}
 	#imgsecundaria img{
+		width:80%;
+	}
+	.galeria{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	}
+	.galeria figure{
 		width:80%;
 	}
 	footer{
