@@ -5,6 +5,7 @@
 	font-family: 'dancing-script';
 	src: url(dancing-script.dancingscriptot.otf);
 }
+/*Se fijan margenes para todo el documento arriba y abajo de cada seccion*/
 *{
 	margin-top: 0;
 	margin-bottom: 0;
@@ -56,7 +57,7 @@ ul{
 	float:right;
 	font-size: 4vh;
 }
-
+/*Se establece para los elementos de la lista aparezcan en linea*/
 #cabecera li{
 	display: inline;
 	padding-left: 1.5%;
@@ -66,15 +67,15 @@ ul{
 	color:#FFFFFF;
 }
 /*Efecto de no subrayado en pagina activa de barra de navegacion*/
-#cabecera a:active{
+.subrayado {
 	text-decoration: none;	
 }
-
+/* Establece la configuracion general de la seccion de la imagen central en la pagina principal*/
 #imgcentral{
 	align-content: center;
 	background:#82c3a6;
 }
-
+/*Establece los parametros para la imagen que esta en la seccion de la imagen central*/
 #imgcentral img{
 	display:block;
 	margin:auto;
@@ -82,20 +83,20 @@ ul{
 	padding: 2% 0;
 	filter: drop-shadow(2px 2px 0 #02010A);
 }
-
+/* Establece la configuracion general de la seccion de la imagen secundaria en la pagina principal*/
 #imgsecundaria{
 	display:flex;
 	flex-direction: row;
 	background:#d5c75f;
 	padding: 2% 0;
 }
-
+/*Establece el tamaño y la forma en que se despliegan los elementos dentro de figure en la seccion de imagenes secundarias*/
 #imgsecundaria figure{
 	display:block;
 	margin:auto;
 	width:50%;
 }
-
+/*Establece los parametros para el despliege de las imagenes dentro de la seccion de imagen secundaria*/
 #imgsecundaria img{
 	display:block;
 	margin:auto;
@@ -105,24 +106,24 @@ ul{
 	transition-duration:1s;
 	transition-timing-function: linear;
 }
-
+/*Configura los elementos figaption dentro de imagen secundaria*/
 #imgsecundaria figcaption{
 	color:black;
 	text-align:center;
 }
-
+/*Efecto de rotacion al colocar el mouse encima del elemento*/
 #rotacion:hover{
 	transform: rotate(10deg);
 }
-
+/*Efecto de traslado al colocar el mouse encima del elemento*/
 #traslado:hover{
 	transform: translate(20px, -5px);
 }
-
+/*Cambio de color del margen en la imagen al colocar el mouse encima*/
 #imgsecundaria img:hover{
 	filter: drop-shadow(2px 2px 0 #82C3A6);
 }
-
+/*Configura los elementos dentro de la seccion de galeria en las paginas secundarias*/
 .galeria{
 	display:flex;
 	flex-direction:row;
@@ -130,36 +131,36 @@ ul{
 	width:100%;
 	background:#d5c75f;
 }
-
+/*Configura los elementos figure dentro de la seccion de galeria de las paginas secundarias*/
 .galeria figure{
 	display:block;
 	margin:auto;
 	padding:2% 0; 
 	width:30%;
 }
-
+/*Configura los elementos imagen dentro de la seccion de galeria de las paginas secundarias*/
 .galeria img{
 	display:block;
 	margin:auto;
 	width:100%;
 	box-shadow: 2px 2px 0 #02010A;
 }
-
+/*Efecto de escala de grises*/
 .escalagrises{
 	-webkit-filter:grayscale(100%);
 	filter:grayscale(100%);
 }
-
+/*Efecto desenfoque*/
 .desenfoque{
 	-webkit-filter:blur(10px);
 	filter:blur(10px);
 }
-
+/*Efecto Sepia*/
 .sefia{
 	-webkit-filter:sepia(100%);
 	filter:sepia(100%);
 }
-
+/*Configuracion general del pie de pagina*/
 footer{
 	display:flex;
 	flex:row;
@@ -167,18 +168,17 @@ footer{
 	border-radius:0 0 10px 10px;
 	padding: 2% 0;
 }
-
+/*Configuracion de las secciones dentro del pie de pagina*/
 .piepagina{
 	width:25%;
 	font-size:3vh;
 	text-align: center;
 }
-
+/*Establece tamaño para el pie de pagina*/
 p > img{
 	width:10%;
-	filter:drop-shadow(0 0 0 black)
 }
-
+/*Animacion slide in*/
 @-webkit-keyframes animacion{
 	0%{
 		margin-top:150%;
@@ -190,7 +190,7 @@ p > img{
 		margin-top:0%;
 	}
 }
-
+/*Configuracion de los elementos de la pagina para una resolucion de 900 pixeles de ancho*/
 @media (max-width:900px){
 	#contenido{
 		width:100%;
