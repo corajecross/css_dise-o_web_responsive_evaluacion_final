@@ -5,6 +5,10 @@
 	font-family: 'dancing-script';
 	src: url(dancing-script.dancingscriptot.otf);
 }
+*{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 /*Se fija un color de fondo para todo el cuerpo del documento y se aplica la tipografia Dancing Script a todo el documento*/
 body{
 	background:#02010A;
@@ -138,6 +142,7 @@ ul{
 	display:block;
 	margin:auto;
 	width:100%;
+	box-shadow: 2px 2px 0 #02010A;
 }
 
 .escalagrises{
